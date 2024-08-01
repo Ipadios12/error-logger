@@ -20,14 +20,3 @@ The "Error Logger" plugin is designed to capture and log PHP errors, displaying 
 3. Place the `error-logger.php` file in the `error-logger` directory.
 4. Activate the plugin from the "Plugins" menu in WordPress.
 
-== Frequently Asked Questions ==
-
-= How can I test the plugin? =
-
-Add the following code to your theme's `functions.php` file to intentionally trigger an error:
-
-```php
-function test_error_logger() {
-    echo $undefined_variable;
-}
-add_action('wp_footer', 'test_error_logger');

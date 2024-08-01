@@ -11,7 +11,7 @@ Capturează și loghează erorile PHP și le afișează pe pagină.
 
 == Description ==
 
-Pluginul "Error Logger" este conceput pentru a captura și a loga erorile PHP, afișându-le pe pagină pentru a facilita procesul de depanare. Acesta loghează erorile într-un fișier și le afișează într-un div roșu pe pagină, evidențiind detalii importante despre eroare.
+Pluginul "Error Logger" este conceput pentru a captura și a loga erorile PHP, afișându-le pe pagină pentru a facilita procesul de ER. Acesta loghează erorile într-un fișier și le afișează într-un div roșu pe pagină, evidențiind detalii importante despre eroare.
 
 == Installation ==
 
@@ -22,12 +22,3 @@ Pluginul "Error Logger" este conceput pentru a captura și a loga erorile PHP, a
 
 == Frequently Asked Questions ==
 
-= Cum pot testa pluginul? =
-
-Adaugă următorul cod în fișierul `functions.php` al temei tale pentru a provoca o eroare intenționată:
-
-```php
-function test_error_logger() {
-    echo $undefined_variable;
-}
-add_action('wp_footer', 'test_error_logger');
